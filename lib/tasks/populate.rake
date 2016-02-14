@@ -505,11 +505,11 @@ namespace :spree_roles do
       Spree::Permission.where(title: 'can-update-spree/roles_permissions', priority: 3).first_or_create!
       Spree::Permission.where(title: 'can-create-spree/roles_permissions', priority: 3).first_or_create!
 
-      Spree::Permission.where(title: 'can-manage-spree/roles_users', priority: 2).first_or_create!
-      Spree::Permission.where(title: 'can-read-spree/roles_users', priority: 3).first_or_create!
-      Spree::Permission.where(title: 'can-index-spree/roles_users', priority: 3).first_or_create!
-      Spree::Permission.where(title: 'can-update-spree/roles_users', priority: 3).first_or_create!
-      Spree::Permission.where(title: 'can-create-spree/roles_users', priority: 3).first_or_create!
+      Spree::Permission.where(title: 'can-manage-spree/role_users', priority: 2).first_or_create!
+      Spree::Permission.where(title: 'can-read-spree/role_users', priority: 3).first_or_create!
+      Spree::Permission.where(title: 'can-index-spree/role_users', priority: 3).first_or_create!
+      Spree::Permission.where(title: 'can-update-spree/role_users', priority: 3).first_or_create!
+      Spree::Permission.where(title: 'can-create-spree/role_users', priority: 3).first_or_create!
 
       Spree::Permission.where(title: 'can-manage-spree/shipments', priority: 2).first_or_create!
       Spree::Permission.where(title: 'can-read-spree/shipments', priority: 3).first_or_create!
